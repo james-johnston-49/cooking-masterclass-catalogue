@@ -1,3 +1,5 @@
+import soldOutImage from '../assets/img/Condiment_King.webp';
+
 export const courses = [
   {
     id: 1,
@@ -29,7 +31,7 @@ export const courses = [
   {
     id: 4,
     title: "Pasta Making Masterclass",
-    chef: "Chef Maria Lopez",
+    chef: "Chef Mario Mario & Luigi Mario",
     level: "Intermediate",
     price: 65,
     available: true,
@@ -51,5 +53,7 @@ export const courses = [
     level: "Highly Advanced",
     price: 145,
     available: false,
+    image: soldOutImage,
   },
 ];
+

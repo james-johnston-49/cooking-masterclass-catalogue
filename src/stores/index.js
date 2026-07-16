@@ -1,11 +1,15 @@
 import { createStore } from "vuex";
 
 const store = createStore({
-  state: {},
+  state: {wishlistCount: 0},
 
-  mutations: {},
+  mutations: {INCREMENT_WISHLIST(state) {
+    state.wishlistCount++;
+  }},
 
-  actions: {},
+  actions: {saveCourseToWishlist({ commit }) {
+  commit('INCREMENT_WISHLIST');},
+  }
 });
 
 export default store;

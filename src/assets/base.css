@@ -1,5 +1,15 @@
 /* color palette from <https://github.com/vuejs/theme> */
 :root {
+  --color-terracotta: #C1502E;
+  --color-olive: #6B7A4F;
+  --color-cream: #FBF3E7;
+  --color-dark: #3B2E26;
+  --color-warning: #A83232;
+  --color-warning: #A83232;
+}
+
+
+:root {
   --vt-c-white: #ffffff;
   --vt-c-white-soft: #f8f8f8;
   --vt-c-white-mute: #f2f2f2;
@@ -36,20 +46,6 @@
   --section-gap: 160px;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --color-background: var(--vt-c-black);
-    --color-background-soft: var(--vt-c-black-soft);
-    --color-background-mute: var(--vt-c-black-mute);
-
-    --color-border: var(--vt-c-divider-dark-2);
-    --color-border-hover: var(--vt-c-divider-dark-1);
-
-    --color-heading: var(--vt-c-text-dark-1);
-    --color-text: var(--vt-c-text-dark-2);
-  }
-}
-
 *,
 *::before,
 *::after {
@@ -60,8 +56,8 @@
 
 body {
   min-height: 100vh;
-  color: var(--color-text);
-  background: var(--color-background);
+  background-color: var(--color-cream);
+  color: var(--color-dark);
   transition:
     color 0.5s,
     background-color 0.5s;
@@ -83,4 +79,8 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2 {
+  font-family: 'Fraunces', serif;
 }
